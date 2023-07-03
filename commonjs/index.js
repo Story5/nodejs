@@ -1,3 +1,3 @@
 console.log('start require');
-require('./lib.js');
-console.log('end require');
+var lib = require('./lib.js');
+console.log('end require',lib);
