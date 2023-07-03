@@ -8,6 +8,11 @@ exports.add = function (a, b) {
 
 exports.geekbang = { hello: 'world' };
 
-setTimeout(() => { 
+module.exports = function minus(a, b) {
+    return a - b;
+}
+
+setTimeout(() => {
     console.log(exports)
 }, 2000);
+
