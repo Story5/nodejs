@@ -1,0 +1,596 @@
+Statistical profiling result from isolate-0x7fa5c114d000-6628-v8.log, (12569 ticks, 16 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    882    7.0%          /usr/lib/system/libsystem_platform.dylib
+    456    3.6%          /usr/lib/system/libsystem_kernel.dylib
+     59    0.5%          /usr/lib/system/libsystem_malloc.dylib
+     42    0.3%          /usr/lib/system/libsystem_c.dylib
+     20    0.2%          /usr/lib/libc++.1.dylib
+     12    0.1%          /usr/lib/system/libsystem_pthread.dylib
+      2    0.0%          /usr/lib/system/libdyld.dylib
+      2    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     10    0.1%    0.1%  LazyCompile: *send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+      5    0.0%    0.0%  LazyCompile: *readFileSync node:fs:466:22
+      4    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      4    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      4    0.0%    0.0%  LazyCompile: *end node:_http_outgoing:997:45
+      4    0.0%    0.0%  LazyCompile: *emit node:events:460:44
+      4    0.0%    0.0%  LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+      3    0.0%    0.0%  LazyCompile: *socketListenerWrap node:_http_server:1141:37
+      3    0.0%    0.0%  LazyCompile: *parserOnIncoming node:_http_server:991:26
+      3    0.0%    0.0%  LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+      3    0.0%    0.0%  LazyCompile: *clearIncoming node:_http_server:920:23
+      3    0.0%    0.0%  LazyCompile: *addListener node:events:604:58
+      3    0.0%    0.0%  LazyCompile: *Readable.resume node:internal/streams/readable:975:37
+      3    0.0%    0.0%  LazyCompile: *Readable.removeListener node:internal/streams/readable:916:45
+      2    0.0%    0.0%  LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      2    0.0%    0.0%  LazyCompile: *resolvePath /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/resolve-path/index.js:45:22
+      2    0.0%    0.0%  LazyCompile: *resolve node:path:1091:10
+      2    0.0%    0.0%  LazyCompile: *resOnFinish node:_http_server:933:21
+      2    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      2    0.0%    0.0%  LazyCompile: *onwrite node:internal/streams/writable:428:17
+      2    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      2    0.0%    0.0%  LazyCompile: *matchKnownFields node:_http_incoming:279:26
+      2    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      2    0.0%    0.0%  LazyCompile: *handleRequest /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:180:16
+      2    0.0%    0.0%  LazyCompile: *get writable /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:525:15
+      2    0.0%    0.0%  LazyCompile: *get node:net:2162:6
+      2    0.0%    0.0%  LazyCompile: *cleanup /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/ee-first/index.js:58:19
+      2    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:286:16
+      2    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:412:22
+      2    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:402:35
+      1    0.0%    0.0%  RegExp: ^\s*([^\s;]+)\s*(?:;(.*))?$
+      1    0.0%    0.0%  LazyCompile: *write_ node:_http_outgoing:865:16
+      1    0.0%    0.0%  LazyCompile: *writeHead node:_http_server:339:19
+      1    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:161:24
+      1    0.0%    0.0%  LazyCompile: *stat node:fs:1514:14
+      1    0.0%    0.0%  LazyCompile: *socketOnClose node:_http_server:745:23
+      1    0.0%    0.0%  LazyCompile: *slowCases node:internal/util:180:19
+      1    0.0%    0.0%  LazyCompile: *setHeader node:_http_outgoing:643:57
+      1    0.0%    0.0%  LazyCompile: *set status /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:83:13
+      1    0.0%    0.0%  LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+      1    0.0%    0.0%  LazyCompile: *removeListener node:events:675:28
+      1    0.0%    0.0%  LazyCompile: *readSync node:fs:706:18
+      1    0.0%    0.0%  LazyCompile: *processPromiseRejections node:internal/process/promises:220:34
+      1    0.0%    0.0%  LazyCompile: *prefinish node:internal/streams/writable:706:19
+      1    0.0%    0.0%  LazyCompile: *onWriteComplete node:internal/stream_base_commons:80:25
+      1    0.0%    0.0%  LazyCompile: *onFinish node:_http_outgoing:992:18
+      1    0.0%    0.0%  LazyCompile: *getEncodingOps node:buffer:737:24
+      1    0.0%    0.0%  LazyCompile: *get node:internal/streams/writable:790:8
+      1    0.0%    0.0%  LazyCompile: *get node:_http_incoming:112:16
+      1    0.0%    0.0%  LazyCompile: *first /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/ee-first/index.js:24:15
+      1    0.0%    0.0%  LazyCompile: *finish node:internal/streams/writable:739:16
+      1    0.0%    0.0%  LazyCompile: *emitCloseNT node:internal/streams/destroy:120:21
+      1    0.0%    0.0%  LazyCompile: *emitAfterScript node:internal/async_hooks:517:25
+      1    0.0%    0.0%  LazyCompile: *connectionListenerInternal node:_http_server:611:36
+      1    0.0%    0.0%  LazyCompile: *connectionListener node:_http_server:605:28
+      1    0.0%    0.0%  LazyCompile: *WritableState node:internal/streams/writable:77:23
+      1    0.0%    0.0%  LazyCompile: *ReadableState node:internal/streams/readable:83:23
+      1    0.0%    0.0%  LazyCompile: *Readable.on node:internal/streams/readable:886:33
+      1    0.0%    0.0%  LazyCompile: *Readable node:internal/streams/readable:186:18
+      1    0.0%    0.0%  LazyCompile: *OutgoingMessage node:_http_outgoing:106:25
+      1    0.0%    0.0%  LazyCompile: *Accepts.encoding.Accepts.encodings /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/accepts/index.js:127:40
+      1    0.0%    0.0%  LazyCompile: *Accepts /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/accepts/index.js:32:18
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/fs/utils:709:40
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:buffer:407:36
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1    0.0%    0.0%  Function: ^toString node:buffer:842:46
+      1    0.0%    0.0%  Function: ^stringToFlags node:internal/fs/utils:578:23
+      1    0.0%    0.0%  Function: ^stat node:fs:1514:14
+      1    0.0%    0.0%  Function: ^socketListenerWrap node:_http_server:1141:37
+      1    0.0%    0.0%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.0%  Function: ^parseAcceptEncoding /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/negotiator/lib/encoding.js:31:29
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:428:17
+      1    0.0%    0.0%  Function: ^onconnection node:net:1966:22
+      1    0.0%    0.0%  Function: ^onWriteComplete node:internal/stream_base_commons:80:25
+      1    0.0%    0.0%  Function: ^onFinish node:internal/streams/writable:669:20
+      1    0.0%    0.0%  Function: ^onFinish /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:96:21
+      1    0.0%    0.0%  Function: ^getEncodingOps node:buffer:737:24
+      1    0.0%    0.0%  Function: ^get path /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/request.js:144:11
+      1    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1352:23
+      1    0.0%    0.0%  Function: ^dirname node:path:1275:10
+      1    0.0%    0.0%  Function: ^attachFinishedListener /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:91:33
+      1    0.0%    0.0%  Function: ^allocate node:buffer:456:18
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:490:20
+      1    0.0%    0.0%  Function: ^Socket.destroySoon node:net:761:40
+      1    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:899:42
+      1    0.0%    0.0%  Function: ^Socket._destroy node:net:772:37
+      1    0.0%    0.0%  Function: ^FastBuffer node:internal/buffer:960:14
+      1    0.0%    0.0%  Function: ^EventEmitter.init node:events:337:29
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:419:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/util:361:24
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:691:38
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:360:35
+      1    0.0%    0.0%  Function: ^<anonymous> node:buffer:407:36
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:91:40
+
+ [C++]:
+   ticks  total  nonlib   name
+   4989   39.7%   45.0%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   3495   27.8%   31.5%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+   1105    8.8%   10.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+    370    2.9%    3.3%  T __kernelrpc_vm_remap
+    142    1.1%    1.3%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    123    1.0%    1.1%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    118    0.9%    1.1%  T _mach_get_times
+     72    0.6%    0.6%  T __kernelrpc_mach_vm_map
+     67    0.5%    0.6%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     47    0.4%    0.4%  T ___pthread_init
+     39    0.3%    0.4%  T _host_get_clock_service
+     33    0.3%    0.3%  T _semaphore_create
+     31    0.2%    0.3%  T _mach_vm_allocate
+     29    0.2%    0.3%  T _task_restartable_ranges_register
+     27    0.2%    0.2%  T _posix_spawnattr_destroy
+     22    0.2%    0.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     17    0.1%    0.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     16    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+     14    0.1%    0.1%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.1%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.1%  T _setrlimit
+     10    0.1%    0.1%  t std::__1::set<node::(anonymous namespace)::Parser*, node::(anonymous namespace)::ParserComparator, std::__1::allocator<node::(anonymous namespace)::Parser*> >::erase(node::(anonymous namespace)::Parser* const&)
+      9    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      8    0.1%    0.1%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      6    0.0%    0.1%  T node::AsyncWrap::EmitTraceEventBefore()
+      6    0.0%    0.1%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      5    0.0%    0.0%  T _mach_port_insert_member
+      4    0.0%    0.0%  T node::InternalCallbackScope::Close()
+      4    0.0%    0.0%  T node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+      4    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+      4    0.0%    0.0%  T _mach_make_memory_entry_64
+      3    0.0%    0.0%  t std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long)
+      3    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupQueue::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupQueue::CleanupHookCallback, node::CleanupQueue::CleanupHookCallback::Hash, node::CleanupQueue::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupQueue::CleanupHookCallback> >::find<node::CleanupQueue::CleanupHookCallback>(node::CleanupQueue::CleanupHookCallback const&)
+      3    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t node::fs::FSReqCallback::~FSReqCallback()
+      3    0.0%    0.0%  T _pthread_mutex_lock
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      2    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      2    0.0%    0.0%  t node::StreamBase::Shutdown(v8::Local<v8::Object>)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::fs::FSReqAfterScope::Reject(uv_fs_s*)
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      2    0.0%    0.0%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      2    0.0%    0.0%  T node::BaseObject::increase_refcount()
+      2    0.0%    0.0%  T node::BaseObject::decrease_refcount()
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      2    0.0%    0.0%  T _mach_port_guard
+      1    0.0%    0.0%  t std::__1::set<node::(anonymous namespace)::Parser*, node::(anonymous namespace)::ParserComparator, std::__1::allocator<node::(anonymous namespace)::Parser*> >::insert(node::(anonymous namespace)::Parser* const&)
+      1    0.0%    0.0%  t std::__1::__shared_ptr_emplace<node::inspector::NodeInspectorClient, std::__1::allocator<node::inspector::NodeInspectorClient> >::__on_zero_shared()
+      1    0.0%    0.0%  t non-virtual thunk to node::PerIsolatePlatformData::NonNestableDelayedTasksEnabled() const
+      1    0.0%    0.0%  t node::InitializationResultImpl::args() const
+      1    0.0%    0.0%  t node::CleanupQueue::Add(void (*)(void*), void*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Remove(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long)>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &node::(anonymous namespace)::Parser::on_message_complete()>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &node::(anonymous namespace)::Parser::on_headers_complete()>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      1    0.0%    0.0%  t __platform_memmove$VARIANT$Haswell
+      1    0.0%    0.0%  T node::fs::FSReqCallback::Reject(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::errors::TryCatchScope::~TryCatchScope()
+      1    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      1    0.0%    0.0%  T node::ParseEncoding(char const*, node::encoding)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      1    0.0%    0.0%  T node::ConnectionWrap<node::TCPWrap, uv_tcp_s>::OnConnection(uv_stream_s*, int)
+      1    0.0%    0.0%  T node::BaseObject::~BaseObject()
+      1    0.0%    0.0%  T node::BaseObject::pointer_data()
+      1    0.0%    0.0%  T node::BaseObject::BaseObject(node::Realm*, v8::Local<v8::Object>)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncHooks::pop_async_context(double)
+      1    0.0%    0.0%  T _task_info
+      1    0.0%    0.0%  T _pthread_setspecific
+      1    0.0%    0.0%  T _pthread_setschedparam
+      1    0.0%    0.0%  T _mach_continuous_time
+      1    0.0%    0.0%  T _mach_absolute_time
+      1    0.0%    0.0%  T _getentropy
+
+ [Summary]:
+   ticks  total  nonlib   name
+    152    1.2%    1.4%  JavaScript
+  10926   86.9%   98.5%  C++
+    448    3.6%    4.0%  GC
+   1475   11.7%          Shared libraries
+     16    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   9780   96.4%   77.8%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    266    2.6%    2.1%  T __kernelrpc_vm_remap
+     29    0.3%    0.2%  T _task_restartable_ranges_register
+     20    0.2%    0.2%  T __kernelrpc_mach_vm_map
+      9    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+      5    0.0%    0.0%  T _mach_port_insert_member
+      5    0.0%    0.0%  T ___pthread_init
+      4    0.0%    0.0%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      3    0.0%    0.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T _setrlimit
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      2    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      2    0.0%    0.0%  t node::StreamBase::Shutdown(v8::Local<v8::Object>)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t std::__1::set<node::(anonymous namespace)::Parser*, node::(anonymous namespace)::ParserComparator, std::__1::allocator<node::(anonymous namespace)::Parser*> >::insert(node::(anonymous namespace)::Parser* const&)
+      1    0.0%    0.0%  t std::__1::set<node::(anonymous namespace)::Parser*, node::(anonymous namespace)::ParserComparator, std::__1::allocator<node::(anonymous namespace)::Parser*> >::erase(node::(anonymous namespace)::Parser* const&)
+      1    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      1    0.0%    0.0%  t node::CleanupQueue::Add(void (*)(void*), void*)
+      1    0.0%    0.0%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      1    0.0%    0.0%  T node::ParseEncoding(char const*, node::encoding)
+      1    0.0%    0.0%  T _task_info
+      1    0.0%    0.0%  T _pthread_setschedparam
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   4989   39.7%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1322   26.5%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1006   76.1%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+   1004   99.8%        Function: ^Socket._writeGeneric node:net:899:42
+   1004  100.0%          Function: ^Socket._writev node:net:936:36
+   1004  100.0%            Function: ^doWrite node:internal/streams/writable:401:17
+     29    2.2%      LazyCompile: *readFileSync node:fs:466:22
+     26   89.7%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     24   92.3%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+     24  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      2    7.7%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      2  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      3   10.3%        Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      3  100.0%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      3  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+     27    2.0%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     10   37.0%        LazyCompile: *send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+      8   80.0%          LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      5   62.5%            LazyCompile: *handleRequest /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:180:16
+      3   37.5%            Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      2   20.0%          Function: ^serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      2  100.0%            Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      3   11.1%        Function: ^FastBuffer node:internal/buffer:960:14
+      3  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1061:28
+      3  100.0%            Function: ^allocate node:buffer:456:18
+      3   11.1%        Function: ^<anonymous> node:internal/fs/utils:360:35
+      3  100.0%          Function: ^<anonymous> node:internal/fs/utils:691:38
+      3  100.0%            LazyCompile: *readFileSync node:fs:466:22
+      2    7.4%        LazyCompile: *encodings /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/negotiator/index.js:52:52
+      2  100.0%          Function: ^Accepts.encoding.Accepts.encodings /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/accepts/index.js:127:40
+      2  100.0%            LazyCompile: *send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+      1    3.7%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:412:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:519:30
+      1  100.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:625:31
+      1    3.7%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:555:24
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:582:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:984:35
+      1    3.7%        LazyCompile: ~populateMaps /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/mime-types/index.js:154:23
+      1  100.0%          Function: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/mime-types/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1208:37
+      1    3.7%        LazyCompile: ~createClientErrorConstructor /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/resolve-path/node_modules/http-errors/index.js:131:39
+      1  100.0%          LazyCompile: ~forEachCode /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/resolve-path/node_modules/http-errors/index.js:226:38
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    3.7%        LazyCompile: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:91:40
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1    3.7%        LazyCompile: *parseAcceptEncoding /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/negotiator/lib/encoding.js:31:29
+      1  100.0%          Function: ^preferredEncodings /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/negotiator/lib/encoding.js:138:28
+      1  100.0%            Function: ^encodings /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/negotiator/index.js:52:52
+      1    3.7%        Function: ^resolve node:path:1091:10
+      1  100.0%          Function: ^resolvePath /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/resolve-path/index.js:45:22
+      1  100.0%            Function: ^send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+      1    3.7%        Function: ^listener /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:162:21
+      1  100.0%          Function: ^onFinish /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:96:21
+      1  100.0%            Function: ^callback /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/ee-first/index.js:53:20
+      1    3.7%        Function: ^<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%          Function: ^requireBuiltin node:internal/bootstrap/loaders:356:24
+      1  100.0%            LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:542:29
+     26    2.0%      LazyCompile: *Socket node:net:338:16
+     21   80.8%        LazyCompile: *onconnection node:net:1966:22
+      5   19.2%        Function: ^onconnection node:net:1966:22
+     23    1.7%      LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      5   21.7%        LazyCompile: *Readable.read node:internal/streams/readable:402:35
+      4   80.0%          LazyCompile: *resume_ node:internal/streams/readable:996:17
+      4  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   20.0%          Function: ^resume_ node:internal/streams/readable:996:17
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      3   13.0%        LazyCompile: *_destroy node:internal/streams/destroy:77:18
+      3  100.0%          LazyCompile: *endReadableNT node:internal/streams/readable:1352:23
+      3  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      3   13.0%        Function: ^onFinish node:internal/streams/writable:669:20
+      3  100.0%          Function: ^afterShutdown node:net:520:23
+      3   13.0%        Function: ^emitReadable node:internal/streams/readable:575:22
+      3  100.0%          Function: ^onEofChunk node:internal/streams/readable:545:20
+      3  100.0%            Function: ^readableAddChunk node:internal/streams/readable:242:26
+      2    8.7%        LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+      2  100.0%          Function: ^Readable.push node:internal/streams/readable:233:35
+      2  100.0%            Function: ^parserOnMessageComplete node:_http_common:137:33
+      2    8.7%        LazyCompile: *Socket._destroy node:net:772:37
+      2  100.0%          LazyCompile: *destroy node:internal/streams/destroy:39:17
+      2  100.0%            Function: ^onceWrapper node:events:622:21
+      2    8.7%        Function: ^resOnFinish node:_http_server:933:21
+      1   50.0%          LazyCompile: *emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:992:18
+      1   50.0%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:992:18
+      1    4.3%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.3%        Function: ^onDestroy node:internal/streams/destroy:80:21
+      1  100.0%          Function: ^Socket._destroy node:net:772:37
+      1  100.0%            LazyCompile: *destroy node:internal/streams/destroy:39:17
+      1    4.3%        Function: ^_destroy node:_http_incoming:221:55
+      1  100.0%          Function: ^_destroy node:internal/streams/destroy:77:18
+      1  100.0%            Function: ^destroy node:internal/streams/destroy:39:17
+     17    1.3%      LazyCompile: *send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+     12   70.6%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      4   23.5%        LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      4  100.0%          LazyCompile: *handleRequest /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:180:16
+      4  100.0%            Function: ^handleRequest /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:154:27
+      1    5.9%        Function: ^serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      1  100.0%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      1  100.0%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:31:19
+   1240   24.9%    LazyCompile: *toString node:buffer:842:46
+   1240  100.0%      LazyCompile: *readFileSync node:fs:466:22
+   1240  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+   1240  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+   1240  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+   1034   20.7%    LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+   1033   99.9%      LazyCompile: *end node:_http_outgoing:997:45
+    576   55.8%        Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    576  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+    457   44.2%        LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    457  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+    524   10.5%    LazyCompile: *write_ node:_http_outgoing:865:16
+    524  100.0%      LazyCompile: *end node:_http_outgoing:997:45
+    264   50.4%        LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    264  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+    260   49.6%        Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    260  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     57    1.1%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+     57  100.0%      Function: ^Socket._writeGeneric node:net:899:42
+     57  100.0%        Function: ^Socket._writev node:net:936:36
+     57  100.0%          Function: ^doWrite node:internal/streams/writable:401:17
+     57  100.0%            Function: ^clearBuffer node:internal/streams/writable:532:21
+
+   3495   27.8%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+   3494  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   3494  100.0%      Function: ^slice node:buffer:652:12
+   3494  100.0%        Function: ^toString node:buffer:842:46
+   2171   62.1%          LazyCompile: *readFileSync node:fs:466:22
+   1558   71.8%            LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+    613   28.2%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+   1323   37.9%          Function: ^readFileSync node:fs:466:22
+   1317   99.5%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+
+   1105    8.8%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+   1105  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1099   99.5%      Function: ^byteLength node:buffer:787:20
+    434   39.5%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+    426   98.2%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+    426  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      8    1.8%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      8  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+    395   35.9%        Function: ^write_ node:_http_outgoing:865:16
+    261   66.1%          Function: ^end node:_http_outgoing:997:45
+    259   99.2%            Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    134   33.9%          LazyCompile: *end node:_http_outgoing:997:45
+    134  100.0%            Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    263   23.9%        Function: ^set body /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:134:11
+    263  100.0%          Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:91:40
+    263  100.0%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+
+    882    7.0%  /usr/lib/system/libsystem_platform.dylib
+    806   91.4%    LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+    803   99.6%      LazyCompile: *end node:_http_outgoing:997:45
+    425   52.9%        Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    425  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+    378   47.1%        LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    378  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     45    5.1%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+     45  100.0%      Function: ^Socket._writeGeneric node:net:899:42
+     45  100.0%        Function: ^Socket._writev node:net:936:36
+     45  100.0%          Function: ^doWrite node:internal/streams/writable:401:17
+     45  100.0%            Function: ^clearBuffer node:internal/streams/writable:532:21
+     10    1.1%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1   10.0%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:412:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:519:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:519:30
+      1   10.0%      LazyCompile: ~set /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/ylru/index.js:55:6
+      1  100.0%        LazyCompile: ~module.exports /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/cache-content-type/index.js:8:18
+      1  100.0%          LazyCompile: ~set type /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:310:11
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1   10.0%      LazyCompile: *set status /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:83:13
+      1  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      1  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      1   10.0%      LazyCompile: *resolve node:path:1091:10
+      1  100.0%        LazyCompile: *send /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-send/index.js:50:21
+      1  100.0%          LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      1  100.0%            LazyCompile: *handleRequest /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:180:16
+      1   10.0%      LazyCompile: *emit node:events:460:44
+      1  100.0%        LazyCompile: *end node:_http_outgoing:997:45
+      1  100.0%          Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+      1  100.0%            Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+      1   10.0%      Function: ^set status /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:83:13
+      1  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      1  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      1   10.0%      Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      1  100.0%        Function: ^_finish node:_http_server:230:52
+      1  100.0%          Function: ^end node:_http_outgoing:997:45
+      1  100.0%            Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+      1   10.0%      Function: ^arrayClone node:events:882:20
+      1  100.0%        LazyCompile: *onFinish node:_http_outgoing:992:18
+      1  100.0%          LazyCompile: *onwrite node:internal/streams/writable:428:17
+      1  100.0%            LazyCompile: *onWriteComplete node:internal/stream_base_commons:80:25
+      1   10.0%      Function: ^<anonymous> node:buffer:407:36
+      1  100.0%        LazyCompile: *readFileSync node:fs:466:22
+      1  100.0%          LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1  100.0%            LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      1   10.0%      Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:91:40
+      1  100.0%        Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1  100.0%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      1  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+
+    456    3.6%  /usr/lib/system/libsystem_kernel.dylib
+    210   46.1%    LazyCompile: *readSync node:fs:706:18
+    210  100.0%      LazyCompile: *readFileSync node:fs:466:22
+    202   96.2%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+    201   99.5%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+    201  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      8    3.8%        Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      8  100.0%          Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      8  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+     81   17.8%    LazyCompile: *readFileSync node:fs:466:22
+     70   86.4%      LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     68   97.1%        LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+     68  100.0%          LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+     68  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2    2.9%        Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      2  100.0%          LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      2  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     11   13.6%      Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     11  100.0%        Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+     11  100.0%          LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+     11  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     33    7.2%    LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+     33  100.0%      LazyCompile: *end node:_http_outgoing:997:45
+     20   60.6%        Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+     20  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     13   39.4%        LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+     13  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     18    3.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     12   66.7%      LazyCompile: *createUnsafeBuffer node:internal/buffer:1061:28
+     12  100.0%        Function: ^allocate node:buffer:456:18
+     12  100.0%          LazyCompile: *readFileSync node:fs:466:22
+     10   83.3%            LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      2   16.7%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      5   27.8%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      5  100.0%        Function: ^FastBuffer node:internal/buffer:960:14
+      5  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1061:28
+      5  100.0%            Function: ^allocate node:buffer:456:18
+      1    5.6%      Function: ^has /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:439:6
+      1  100.0%        Function: ^set length /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:193:13
+      1  100.0%          Function: ^set body /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/response.js:134:11
+      1  100.0%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:91:40
+     11    2.4%    LazyCompile: *toString node:buffer:842:46
+     11  100.0%      LazyCompile: *readFileSync node:fs:466:22
+     11  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     11  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+     11  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+      5    1.1%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+      5  100.0%      Function: ^Socket._writeGeneric node:net:899:42
+      5  100.0%        Function: ^Socket._writev node:net:936:36
+      5  100.0%          Function: ^doWrite node:internal/streams/writable:401:17
+      5  100.0%            Function: ^clearBuffer node:internal/streams/writable:532:21
+
+    370    2.9%  T __kernelrpc_vm_remap
+    226   61.1%    LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+    225   99.6%      LazyCompile: *end node:_http_outgoing:997:45
+    136   60.4%        Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+    136  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     89   39.6%        LazyCompile: *respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+     89  100.0%          Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+     22    5.9%    LazyCompile: *toString node:buffer:842:46
+     22  100.0%      LazyCompile: *readFileSync node:fs:466:22
+     22  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     22  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+     22  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+     18    4.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2   11.1%      LazyCompile: ~connectionListenerInternal node:_http_server:611:36
+      2  100.0%        LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      2  100.0%          LazyCompile: ~connectionListener node:_http_server:605:28
+      2  100.0%            LazyCompile: ~onconnection node:net:1966:22
+      1    5.6%      LazyCompile: ~setupUserModules node:internal/process/pre_execution:113:26
+      1  100.0%        LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.6%      LazyCompile: ~parserOnIncoming node:_http_server:991:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    5.6%      LazyCompile: ~initAsyncResource node:internal/timers:159:27
+      1  100.0%        LazyCompile: ~Timeout node:internal/timers:169:14
+      1  100.0%          LazyCompile: ~setInterval node:timers:210:21
+      1  100.0%            LazyCompile: ~setupConnectionsTracking node:_http_server:485:34
+      1    5.6%      LazyCompile: ~init node:internal/util/debuglog:72:16
+      1  100.0%        LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%          LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1  100.0%            LazyCompile: ~Module._resolveLookupPaths node:internal/modules/cjs/loader:785:38
+      1    5.6%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%        LazyCompile: ~useColors /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/debug/src/node.js:155:19
+      1  100.0%          LazyCompile: ~createDebug /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/debug/src/common.js:60:22
+      1  100.0%            Function: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:1:1
+      1    5.6%      LazyCompile: ~fresh /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/parseurl/index.js:153:16
+      1  100.0%        Function: ^parseurl /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/parseurl/index.js:35:19
+      1  100.0%          Function: ^get path /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/request.js:144:11
+      1  100.0%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/delegates/index.js:71:40
+      1    5.6%      LazyCompile: ~forEachCode /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/statuses/index.js:63:51
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          LazyCompile: ~populateStatusesMap /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/statuses/index.js:60:30
+      1  100.0%            Function: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/statuses/index.js:1:1
+      1    5.6%      LazyCompile: ~first /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/ee-first/index.js:24:15
+      1  100.0%        LazyCompile: ~attachFinishedListener /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:91:33
+      1  100.0%          LazyCompile: ~attachListener /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:141:25
+      1  100.0%            LazyCompile: ~onFinished /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/on-finished/index.js:46:21
+      1    5.6%      LazyCompile: ~createClientErrorConstructor /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/http-errors/index.js:133:39
+      1  100.0%        LazyCompile: ~forEachCode /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/http-errors/index.js:265:38
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~populateConstructorExports /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/http-errors/index.js:264:37
+      1    5.6%      LazyCompile: ~callback node:internal/streams/writable:553:44
+      1  100.0%        LazyCompile: ~afterWrite node:internal/streams/writable:490:20
+      1  100.0%          LazyCompile: ~onwrite node:internal/streams/writable:428:17
+      1  100.0%            LazyCompile: ~onWriteComplete node:internal/stream_base_commons:80:25
+      1    5.6%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:338:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    5.6%      LazyCompile: ~<anonymous> node:internal/validators:94:3
+      1  100.0%        LazyCompile: ~readSync node:fs:706:18
+      1  100.0%          LazyCompile: ~tryReadSync node:fs:445:21
+      1  100.0%            LazyCompile: ~readFileSync node:fs:466:22
+      1    5.6%      LazyCompile: *emit node:events:460:44
+      1  100.0%        LazyCompile: *end node:_http_outgoing:997:45
+      1  100.0%          Function: ^respond /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:256:17
+      1  100.0%            Function: ^handleResponse /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa/lib/application.js:184:28
+      1    5.6%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:356:24
+      1  100.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:356:24
+      1    5.6%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:356:24
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:542:29
+      1  100.0%            LazyCompile: ~setupUserModules node:internal/process/pre_execution:113:26
+      1    5.6%      Function: ^onwrite node:internal/streams/writable:428:17
+      1  100.0%        Function: ^onWriteComplete node:internal/stream_base_commons:80:25
+     18    4.9%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+     18  100.0%      Function: ^Socket._writeGeneric node:net:899:42
+     18  100.0%        Function: ^Socket._writev node:net:936:36
+     18  100.0%          Function: ^doWrite node:internal/streams/writable:401:17
+     18  100.0%            Function: ^clearBuffer node:internal/streams/writable:532:21
+
+    142    1.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    139   97.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    139  100.0%      Function: ^readSync node:fs:706:18
+     97   69.8%        Function: ^tryReadSync node:fs:445:21
+     97  100.0%          Function: ^readFileSync node:fs:466:22
+     93   95.9%            Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      2    2.1%            LazyCompile: ~<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      1    1.0%            LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1313:39
+      1    1.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1263:37
+     42   30.2%        LazyCompile: *readFileSync node:fs:466:22
+     42  100.0%          Function: ^<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+     42  100.0%            Function: ^dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      3    2.1%    LazyCompile: *readSync node:fs:706:18
+      3  100.0%      LazyCompile: *readFileSync node:fs:466:22
+      3  100.0%        LazyCompile: *<anonymous> /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/index.js:13:16
+      3  100.0%          LazyCompile: *dispatch /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-compose/index.js:35:23
+      3  100.0%            LazyCompile: *serve /Users/story5/Story5/01Project/Github/nodejs/第4章 性能调优篇/node_modules/koa-static/index.js:39:33
+
