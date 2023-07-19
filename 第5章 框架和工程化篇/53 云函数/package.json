@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "easy_sock": "^0.4.1",
+    "koa": "^2.14.2",
+    "koa-mount": "^4.0.0",
+    "memory-fs": "^0.5.0",
+    "mkdirp": "^3.0.1",
+    "protocol-buffers": "^5.0.0",
+    "request": "^2.88.2",
+    "text-loader": "^0.0.1",
+    "webpack": "^5.88.2"
+  }
+}
